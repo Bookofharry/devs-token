@@ -41,7 +41,7 @@ Tests cover the initial supply, metadata, transfers, minting permissions, pause/
 Set `SEPOLIA_RPC_URL` and `PRIVATE_KEY` locally. The deployer needs Sepolia test ETH.
 
 ```sh
-forge script script/DeployDevsToken.s.sol:DeployDevsToken --rpc-url sepolia --broadcast
+forge script script/DeployDevsToken.s.sol:DeployDevsToken --rpc-url sepolia --broadcast --gas-estimate-multiplier 800
 ```
 
 The script is restricted to Sepolia and local chain ID 31337. It creates DEVS TOKEN with the name, symbol, and initial supply shown above.
@@ -55,4 +55,12 @@ Foundry saves the transaction in `broadcast/DeployDevsToken.s.sol/11155111/run-l
 
 ## Submission status
 
-Sepolia deployment and the final Google Doc are pending. No deployment transaction hash is available yet.
+Deployed successfully on Ethereum Sepolia.
+
+- Contract: `0x08c2d0E81A04E71a77253FE115C4E8fe3f6d210D`
+- Transaction: `0x9772154e6b6480956bb4810f5e910cb04529ccb0ab0228bd7528d0d7b5bb96b9`
+- [View deployment](https://sepolia.etherscan.io/tx/0x9772154e6b6480956bb4810f5e910cb04529ccb0ab0228bd7528d0d7b5bb96b9)
+
+The first deployment attempt ran out of gas. The successful retry used a higher gas limit after checking the RPC estimate. Public receipt and contract details are in `evidence/sepolia-deployment.json`.
+
+The final Google Doc still needs to be uploaded and shared with anyone who has its link.

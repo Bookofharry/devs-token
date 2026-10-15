@@ -1,0 +1,15 @@
+{
+  "chainId": 11155111,
+  "transactionHash": "0x9772154e6b6480956bb4810f5e910cb04529ccb0ab0228bd7528d0d7b5bb96b9",
+  "contractAddress": "0x08c2d0E81A04E71a77253FE115C4E8fe3f6d210D",
+  "status": 1,
+  "blockNumber": 11921525,
+  "name": "DEVS TOKEN",
+  "symbol": "DEVS",
+  "decimals": 18,
+  "totalSupply": "1000000000000000000000000",
+  "owner": "0x23EECe765EcD827eE7834CebF5EDE3dbd2328Aa2",
+  "ownerBalance": "1000000000000000000000000",
+  "gasUsed": "4994223",
+  "feeWei": "262185085943079"
+}
