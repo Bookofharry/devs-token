@@ -2,24 +2,24 @@
 pragma solidity ^0.8.28;
 
 import {Test} from "forge-std/Test.sol";
-import {HarryToken} from "../src/HarryToken.sol";
+import {DevsToken} from "../src/DevsToken.sol";
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 import {Pausable} from "@openzeppelin/contracts/utils/Pausable.sol";
 import {IERC20Errors} from "@openzeppelin/contracts/interfaces/draft-IERC6093.sol";
 
-contract HarryTokenTest is Test {
-    HarryToken token;
+contract DevsTokenTest is Test {
+    DevsToken token;
     address alice = makeAddr("alice");
     address bob = makeAddr("bob");
     uint256 constant SUPPLY = 1_000_000 ether;
 
     function setUp() public {
-        token = new HarryToken("Harry Token", "HARRY", 1_000_000);
+        token = new DevsToken("DEVS TOKEN", "DEVS", 1_000_000);
     }
 
     function testInitialSupplyAndMetadata() public view {
-        assertEq(token.name(), "Harry Token");
-        assertEq(token.symbol(), "HARRY");
+        assertEq(token.name(), "DEVS TOKEN");
+        assertEq(token.symbol(), "DEVS");
         assertEq(token.decimals(), 18);
         assertEq(token.owner(), address(this));
         assertEq(token.totalSupply(), SUPPLY);

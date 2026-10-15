@@ -6,7 +6,7 @@ import {ERC20Burnable} from "@openzeppelin/contracts/token/ERC20/extensions/ERC2
 import {ERC20Pausable} from "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol";
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
-contract HarryToken is ERC20, ERC20Burnable, ERC20Pausable, Ownable {
+contract DevsToken is ERC20, ERC20Burnable, ERC20Pausable, Ownable {
     constructor(string memory name_, string memory symbol_, uint256 initialSupply)
         ERC20(name_, symbol_)
         Ownable(msg.sender)

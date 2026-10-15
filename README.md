@@ -1,11 +1,11 @@
-# Harry Token
+# DEVS TOKEN
 
 My fourth assignment: an ERC-20 token built with Solidity and Foundry.
 
 | Setting | Value |
 | --- | --- |
-| Name | Harry Token |
-| Symbol | HARRY |
+| Name | DEVS TOKEN |
+| Symbol | DEVS |
 | Initial supply | 1,000,000 tokens |
 | Decimals | 18 |
 | Network | Ethereum Sepolia |
@@ -16,9 +16,9 @@ The constructor takes the supply in whole tokens. `mint`, `transfer`, and `burn`
 
 ## Files
 
-- `src/HarryToken.sol` — token contract
-- `test/HarryToken.t.sol` — Foundry tests
-- `script/DeployHarryToken.s.sol` — deployment script
+- `src/DevsToken.sol` — token contract
+- `test/DevsToken.t.sol` — Foundry tests
+- `script/DeployDevsToken.s.sol` — deployment script
 - `evidence/` — build and test output, plus screenshots when captured
 
 ## Build and test
@@ -26,8 +26,8 @@ The constructor takes the supply in whole tokens. `mint`, `transfer`, and `burn`
 Install [Foundry](https://getfoundry.sh/), then:
 
 ```sh
-git clone --recurse-submodules https://github.com/Bookofharry/harry-token.git
-cd harry-token
+git clone --recurse-submodules https://github.com/Bookofharry/devs-token.git
+cd devs-token
 forge build
 forge test -vv
 ```
@@ -41,12 +41,12 @@ Tests cover the initial supply, metadata, transfers, minting permissions, pause/
 Set `SEPOLIA_RPC_URL` and `PRIVATE_KEY` locally. The deployer needs Sepolia test ETH.
 
 ```sh
-forge script script/DeployHarryToken.s.sol:DeployHarryToken --rpc-url sepolia --broadcast
+forge script script/DeployDevsToken.s.sol:DeployDevsToken --rpc-url sepolia --broadcast
 ```
 
-The script is restricted to Sepolia and local chain ID 31337. It creates Harry Token with the name, symbol, and initial supply shown above.
+The script is restricted to Sepolia and local chain ID 31337. It creates DEVS TOKEN with the name, symbol, and initial supply shown above.
 
-Foundry saves the transaction in `broadcast/DeployHarryToken.s.sol/11155111/run-latest.json`. Check the receipt before reporting a successful deployment. Do not commit private keys or `.env` files.
+Foundry saves the transaction in `broadcast/DeployDevsToken.s.sol/11155111/run-latest.json`. Check the receipt before reporting a successful deployment. Do not commit private keys or `.env` files.
 
 ## Assignment walkthroughs
 
