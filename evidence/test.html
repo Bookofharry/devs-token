@@ -1,0 +1,26 @@
+<!doctype html><html><meta charset="utf-8"><title>Harry Token - test</title><style>body{margin:32px;background:#10151e;color:#e2e8f0;font:18px/1.55 monospace}h1{font:24px sans-serif}pre{white-space:pre-wrap}small{color:#b5c0d0}</style><h1>Harry Token - Foundry test</h1><small>Saved command output | Ethereum ERC-20 assignment</small><pre>&gt; forge test -vv
+
+No files changed, compilation skipped
+
+Ran 17 tests for test/HarryToken.t.sol:HarryTokenTest
+[PASS] testApproveAndTransferFrom() (gas: 140261)
+[PASS] testBurnFromUsesAllowance() (gas: 120162)
+[PASS] testBurnReducesBalanceAndSupply() (gas: 111538)
+[PASS] testFuzzTransferPreservesSupply(uint256) (runs: 256, μ: 79190, ~: 79847)
+[PASS] testInitialSupplyAndMetadata() (gas: 59285)
+[PASS] testNonOwnerCannotMint() (gas: 35522)
+[PASS] testNonOwnerCannotPause() (gas: 34645)
+[PASS] testNonOwnerCannotUnpause() (gas: 62882)
+[PASS] testOwnerCanMint() (gas: 71904)
+[PASS] testOwnershipTransferChangesMintPermission() (gas: 124263)
+[PASS] testPauseBlocksMintAndBurn() (gas: 87728)
+[PASS] testPauseBlocksTransfer() (gas: 67082)
+[PASS] testTransferBetweenAccounts() (gas: 79613)
+[PASS] testTransferFromRejectsInsufficientAllowance() (gas: 85369)
+[PASS] testTransferRejectsInsufficientBalance() (gas: 39981)
+[PASS] testTransferRejectsZeroAddress() (gas: 30480)
+[PASS] testUnpauseAllowsTransfer() (gas: 121020)
+Suite result: ok. 17 passed; 0 failed; 0 skipped; finished in 10.37ms (30.33ms CPU time)
+
+Ran 1 test suite in 11.65ms (10.37ms CPU time): 17 tests passed, 0 failed, 0 skipped (17 total tests)
+</pre></html>
